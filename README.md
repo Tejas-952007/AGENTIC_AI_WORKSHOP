@@ -44,4 +44,3 @@ Hey Beginners! Welcome to this workshop repository. This is where we learn how t
    - `TAVILY_API_KEY`: To let your AI search the web.
 
 ---
-Happy Coding! Let's build the future of AI together! 🚀
