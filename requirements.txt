@@ -14,7 +14,7 @@ langchain
 python-dotenv
 numpy
 scikit-learn
-streamlit
+streamlit>=1.40.0
 pydantic
 google-genai
 langgraph
