@@ -1,59 +1,47 @@
-# Agentic AI Workspace
+# Agentic AI & LLM Workshop 🚀
 
-This repository contains various experiments and applications built using Agentic AI frameworks, Large Language Models (LLMs), and modern web tools.
+Hey Beginners! Welcome to this workshop repository. This is where we learn how to build amazing AI applications from scratch.
 
-## 🚀 Key Applications
+## 📅 Workshop Journey (Day-by-Day)
 
-### 1. Research Paper AI Synthesizer (`app.py`)
-A premium Streamlit application designed to summarize and explain complex scientific literature.
-- **Features**: 
-  - Dynamic research paper selection.
-  - Multi-style explanations (Beginner, Technical, Mathematical, Code-oriented).
-  - Follow-up Q&A system.
-  - Premium UI with custom CSS and Inter typography.
-- **Tech Stack**: Streamlit, LangChain, Google Generative AI (Gemini 2.5 Flash Lite).
+### 📍 Day 1: Exploring AI Models
+- Introduction to Large Language Models (LLMs).
+- Learning how to use **Hugging Face** and **Google Gemini** for basic chat.
+- Setting up the environment and understanding how AI logic works.
 
-### 2. LangChain Tavily Search Agent (`langchain_agent_tavily.py`)
-An autonomous ReAct agent capable of browsing the web to answer real-time questions.
-- **Capabilities**: Uses the Tavily search engine to fetch current events (e.g., weather) and provides reasoning-based answers.
-- **Tech Stack**: LangChain (Classic Agents), Tavily, Gemini.
+### 📍 Day 2: Prompts & Beautiful Apps
+- **Prompt Engineering**: Learning how to give the best instructions to AI.
+- **Streamlit**: Building our first web-based tool — the "Research Paper Explainer."
+- Designing premium UIs with custom colors and fonts to make them look professional.
 
-## 🛠️ Technology Stack
+### 📍 Day 3: Intelligence & AI Agents
+- **AI Agents**: Moving beyond simple chat to apps that can "think" and "act."
+- **Web Search**: Using **Tavily** to let our AI browse the real-time internet.
+- Building an agent that can find current weather, news, and more.
 
-- **Frameworks**: [LangChain](https://www.langchain.com/), [Streamlit](https://streamlit.io/)
-- **LLMs**: Google Gemini (via `langchain-google-genai`), Groq, Hugging Face.
-- **Tools**: [Tavily Search](https://tavily.com/) for real-time information retrieval.
-- **Environment**: Python 3.13+, `python-dotenv` for secure secret management.
+## 🛠️ Main Tech Stack
+- **Python**: Our main coding language.
+- **LangChain**: The "brain" that connects different AI tools together.
+- **Streamlit**: To turn our Python code into a beautiful website.
+- **Tavily**: A powerful search engine built for AI agents.
 
-## 📂 File Explanations
+## 📂 What are these files?
+- `app.py`: The code for our scientific paper explainer website.
+- `langchain_agent_tavily.py`: Our smart agent that can search the internet.
+- `requirements.txt`: The list of all "ingredients" (libraries) you need to install.
+- `Practice Notebooks (*.ipynb)`: Our classroom practice files for prompt templates and chains.
 
-- `app.py`: The main Streamlit dashboard for the Research Paper Synthesizer.
-- `langchain_agent_tavily.py`: A standalone script demonstrating a web-searching agent.
-- `requirements.txt`: List of Python dependencies.
-- `.env`: Environment variables (API Keys).
-- `.streamlit/config.toml`: Streamlit's UI configuration.
-- `*.ipynb`: Jupyter Notebooks documenting various experimentation steps (HF demos, prompt templates, sequential chains).
-- `list_models.py` / `list_models_direct.py`: Utility scripts to probe available Gemini models.
+## ⚙️ How to Setup (For Students)
 
-## ⚙️ Setup & Installation
-
-1. Create a virtual environment:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   ```
-2. Install dependencies:
+1. **Install Tools**: Open your terminal and run:
    ```bash
    pip install -r requirements.txt
    ```
-3. Configure your API keys in a `.env` file:
-   ```env
-   GOOGLE_API_KEY=your_key
-   TAVILY_API_KEY=your_key
-   ```
-4. Run the apps:
-   - For Streamlit: `streamlit run app.py`
-   - For Agent: `python langchain_agent_tavily.py`
+2. **API Keys**: Create a file named `.env` in the folder. You need to add these **4 Keys** to make everything work:
+   - `GOOGLE_API_KEY`: To talk to Google Gemini.
+   - `HF_TOKEN`: To use Hugging Face models.
+   - `GROQ_API_KEY`: To use super-fast models from Groq.
+   - `TAVILY_API_KEY`: To let your AI search the web.
 
 ---
-*Created with ❤️ by Antigravity AI Assistant.*
+Happy Coding! Let's build the future of AI together! 🚀
