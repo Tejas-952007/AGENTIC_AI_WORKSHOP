@@ -1,6 +1,7 @@
 matplotlib
 seaborn
 pandas
+altair<5
 requests
 mlxtend
 PyPDF2
