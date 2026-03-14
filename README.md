@@ -26,7 +26,8 @@ Hey Beginners! Welcome to this workshop repository. This is where we learn how t
 - **Tavily**: A powerful search engine built for AI agents.
 
 ## 📂 What are these files?
-- `app.py`: The code for our scientific paper explainer website.
+- `app.py`: The code for our scientific paper explainer website.  
+  **Live App:** [researchexplainwithai.streamlit.app](https://researchexplainwithai.streamlit.app/) (Project built during our Agentic AI Workshop)
 - `langchain_agent_tavily.py`: Our smart agent that can search the internet.
 - `requirements.txt`: The list of all "ingredients" (libraries) you need to install.
 - `Practice Notebooks (*.ipynb)`: Our classroom practice files for prompt templates and chains.
