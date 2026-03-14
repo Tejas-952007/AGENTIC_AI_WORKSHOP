@@ -9,10 +9,20 @@ st.set_page_config(page_title="Research Paper Explainer", page_icon="�", layou
 
 load_dotenv()
 
+# Get API key from environment or streamlit secrets
+google_api_key = os.getenv("GOOGLE_API_KEY")
+if not google_api_key and "GOOGLE_API_KEY" in st.secrets:
+    google_api_key = st.secrets["GOOGLE_API_KEY"]
+
 # Initialize LLM
+if not google_api_key:
+    st.error("⚠️ **GOOGLE_API_KEY Missing.** Please add it to your secrets or .env file.")
+    st.stop()
+
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.5-flash-lite",
-    temperature=0.3
+    temperature=0.3,
+    google_api_key=google_api_key
 )
 
 # Custom CSS for Premium UI improvement
